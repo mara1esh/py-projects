@@ -1,3 +1,15 @@
+'''''
+Implement a program that will emulate the work with namespaces. You need to implement support for creating namespaces and adding variables to them.
+
+In this task, each namespace has a unique text identifier - its name.
+
+Your program receives the following queries:
+
+create <namespace> <parent> - create a new namespace named <namespace> inside the space <parent>
+add <namespace> <var> - add a variable <var> to the <namespace>
+get <namespace> <var> - get the name of the space from which the <var> variable will be taken when requested from the <namespace> space, or None if no such space exists
+''''''
+
 dic = {'global':{'parent' : 'None', 'vars':[]}}
 
 def create(_namespace, _parent):
